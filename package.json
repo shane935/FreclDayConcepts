@@ -1,0 +1,15 @@
+{
+  "name": "frecl-day-concepts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Composition.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.3.2",
+    "redux": "^3.6.0"
+  }
+}
