@@ -8,9 +8,10 @@ function add(a, b) {
 function multiply(a) {
   return a * a
 }
-function add3(a) {
-  return add(3, a);
+function addf(a){
+  return (b) => a + b;
 }
+const add3 = addf(3);
 
 const compose = (...funcs) => {
   const lastFunc = funcs[funcs.length - 1];
@@ -25,6 +26,14 @@ const compose = (...funcs) => {
 };
 
 const addSquare = compose(multiply, add3, add);
+
+console.log('addf',
+compose(
+  multiply,
+  addf(3),
+  add
+)(1, 2)
+)
 
 const addSquareUncomposed = (a, b) => {
   return multiply(add3(add(a, b)))
